@@ -14,10 +14,12 @@ const assignment = {};
  * @returns number the sum of the numbers
  */
 function sumOfNumbers(arrayOfNumbers) {
-   let sum = 0;
+    let sum = 0;
+    //for loop to iterate through the array and get numbers 
     for (let index = 0; index < arrayOfNumbers.length; index++) {
-        sum += arrayOfNumbers[index];
         
+        //Add the numbers 
+        sum += arrayOfNumbers[index];  
     }
     return sum;
 }
@@ -33,10 +35,11 @@ function sumOfNumbers(arrayOfNumbers) {
  * @returns number the count of even numbers
  */
 function countEvenNumbers(arrayOfNumbers) {
-  let evenNumbers = arrayOfNumbers.filter(number => 
-            number % 2 == 0) 
-         
-         return evenNumbers.length;                 
+              //use filter method to filter out even nos from the array 
+        let evenNumbers = arrayOfNumbers.filter(number => 
+                  number % 2 == 0) 
+             //return length of the newly created array of even numbers 
+               return evenNumbers.length;       
 } 
 assignment.countEvenNumbers = countEvenNumbers;
 
