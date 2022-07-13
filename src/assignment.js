@@ -34,7 +34,7 @@ function sumOfNumbers(arrayOfNumbers) {
  */
 function countEvenNumbers(arrayOfNumbers) {
   let evenNumbers = arrayOfNumbers.filter((number) => {
-             if (number % 2 === 0) {
+             if (number % 2 == 0) {
                 return number;
                 
             }
@@ -42,6 +42,7 @@ function countEvenNumbers(arrayOfNumbers) {
     return evenNumbers.length;
 } 
 assignment.countEvenNumbers = countEvenNumbers;
+
 
 /**
  * Challenge - 3
